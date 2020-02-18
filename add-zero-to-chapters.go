@@ -8,6 +8,14 @@ import (
 	"strings"
 )
 
+// incorrect
+// 15.1 2. Help the Cashier (Conditional & looping Section).zip
+// 15.1  002. Help the Cashier (Conditional & looping Section).zip
+
+// correct
+//15.1 5.1 The Island Treasure.zip.zip
+//15.1 5.1 The Island Treasure.zip.zip
+
 func main() {
 	fmt.Println("--add-zero-to-chapters.go--")
 
