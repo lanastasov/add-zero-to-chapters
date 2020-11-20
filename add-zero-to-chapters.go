@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	fmt.Println("--add-zero-to-chapters.go--ver-0.0.3")
+	fmt.Println("--add-zero-to-chapters.go--ver-0.0.4")
 
 	// re1 := regexp.MustCompile(`\D\d{1}\.\s`)
 	// re2 := regexp.MustCompile(`\D\d{2}\.\s`)
@@ -35,7 +35,7 @@ func main() {
 			(files[i][0] == 55 && (files[i][1] == 46 || files[i][1] == 45)) ||
 			(files[i][0] == 56 && (files[i][1] == 46 || files[i][1] == 45)) ||
 			(files[i][0] == 57 && (files[i][1] == 46 || files[i][1] == 45)) {
-			_ = os.Rename(files[i], "0"+files[i])
+			_ = os.Rename(files[i], "00"+files[i])
 		}
 
 		v := re1.FindString(files[i])

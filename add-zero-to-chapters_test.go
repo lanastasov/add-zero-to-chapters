@@ -1,3 +1,5 @@
+package main
+
 // incorrect
 // 15.1 2. Help the Cashier (Conditional & looping Section).zip
 // 15.1  002. Help the Cashier (Conditional & looping Section).zip
@@ -11,3 +13,9 @@
 // lesson100.mp4 -> lesson100.mp4
 
 // 63. Custom HTTP Library (Ajax With Callbacks) - Part 1.MP4 -> 063. Custom HTTP Library (Ajax With Callbacks) - Part 1.MP4
+
+// 1. => 01.
+// 2. => 02.
+// 9. => 09.
+// 10.=> 010 (should be 10)
+// 11.=> 011 (should be 11)
