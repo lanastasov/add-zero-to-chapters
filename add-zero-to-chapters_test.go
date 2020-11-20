@@ -14,8 +14,9 @@ package main
 
 // 63. Custom HTTP Library (Ajax With Callbacks) - Part 1.MP4 -> 063. Custom HTTP Library (Ajax With Callbacks) - Part 1.MP4
 
-// 1. => 01.
-// 2. => 02.
-// 9. => 09.
-// 10.=> 010 (should be 10)
-// 11.=> 011 (should be 11)
+// now working this way
+// 1. => 001.
+// 2. => 002.
+// 9. => 009.
+// 10.=> 010
+// 11.=> 011
