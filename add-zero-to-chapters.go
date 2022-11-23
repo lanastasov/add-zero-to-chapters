@@ -23,6 +23,7 @@ func main() {
 	re6 := regexp.MustCompile(`^\d{2}\D`)
 	re7 := regexp.MustCompile(`\D\d{1}\.`)
 	re8 := regexp.MustCompile(`\D\d{2}\.`)
+	re9 := regexp.MustCompile(`\d{3}\.\d\s`)
 
 	files, _ := filepath.Glob("*.*")
 	for i := range files {
@@ -88,6 +89,14 @@ func main() {
 			v = strings.TrimLeft(v, string(v[0]))
 			v = strings.TrimRight(v, string(v[len(v)-1]))
 			_ = os.Rename(files[i], strings.Replace(files[i], v, " 0"+v, 1))
+		}
+
+		// 038.3 filename.mp4 -> 038.03 filename.mp4
+		v = re9.FindString(files[i])
+		if v != "" {
+			v = strings.TrimLeft(v, string(v[0]))
+			v = strings.TrimRight(v, string(v[len(v)-1]))
+			_ = os.Rename(files[i],strings.Replace(files[i], v, strings.Replace(v,".",".0",1), 1))
 		}
 	}
 	var input string
