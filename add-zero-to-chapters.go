@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// https://github.com/lanastasov/copy-file-names-empty
 func main() {
 	fmt.Println("--add-zero-to-chapters.go--ver-0.0.4")
 
